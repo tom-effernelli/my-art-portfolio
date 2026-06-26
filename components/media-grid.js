@@ -11,6 +11,17 @@ const SPAN = [
 
 // tiles mode: each tile has { area, img, pos, label }
 // items mode (legacy): array of { type, src, alt }
+
+// Derive a correct `sizes` value from the tile's area string so Next.js serves
+// the right resolution. Area format: "rowStart / colStart / rowEnd / colEnd".
+function tileSizes(area) {
+  const parts = area.split("/").map((s) => parseInt(s.trim(), 10));
+  const colSpan = parts[3] - parts[1];
+  if (colSpan >= 3) return "100vw";
+  if (colSpan >= 2) return "(max-width: 565px) 100vw, 67vw";
+  return "(max-width: 565px) 100vw, 34vw";
+}
+
 export default function MediaGrid({ items = [], tiles = null, zipName = "shooting", dark = false }) {
   const images = tiles
     ? tiles.filter((t) => t.img).map((t) => ({ src: t.img, alt: t.label }))
@@ -139,7 +150,7 @@ export default function MediaGrid({ items = [], tiles = null, zipName = "shootin
                     src={t.img}
                     alt={t.label || `${zipName} ${i + 1}`}
                     fill
-                    sizes="33vw"
+                    sizes={tileSizes(t.area)}
                     className="object-cover transition-transform duration-500 ease-out group-hover:scale-[1.05]"
                     style={{ objectPosition: t.pos || "center" }}
                   />
