@@ -68,6 +68,7 @@ export default function TopBar({ currentPage = "home", theme = "light" }) {
       {menuOpen && (
         <DropdownMenu
           currentPage={currentPage}
+          theme={theme}
           onClose={() => setMenuOpen(false)}
         />
       )}
