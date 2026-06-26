@@ -29,7 +29,7 @@ function Tile({ t }) {
   return (
     <div style={{ gridArea: t.area }} className="relative overflow-hidden">
       {t.img ? (
-        <Image src={t.img} alt={t.label} fill sizes={tileSizes(t.area)} className="object-cover" style={{ objectPosition: t.pos || "center" }} />
+        <Image src={t.img} alt={t.label} fill sizes={tileSizes(t.area, { desktopRowPx: 70, mobileRowPx: 34 })} className="object-cover" style={{ objectPosition: t.pos || "center" }} />
       ) : t.video ? (
         <video src={t.video} autoPlay muted loop playsInline className="absolute inset-0 w-full h-full object-cover" />
       ) : (

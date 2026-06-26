@@ -141,7 +141,7 @@ export default function MediaGrid({ items = [], tiles = null, zipName = "shootin
                     src={t.img}
                     alt={t.label || `${zipName} ${i + 1}`}
                     fill
-                    sizes={tileSizes(t.area)}
+                    sizes={tileSizes(t.area, { desktopRowPx: 170, mobileRowPx: 120 })}
                     className="object-cover transition-transform duration-500 ease-out group-hover:scale-[1.05]"
                     style={{ objectPosition: t.pos || "center" }}
                   />
