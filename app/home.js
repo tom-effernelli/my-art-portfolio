@@ -11,9 +11,17 @@ function VideoAutoplay({ src }) {
     const v = ref.current;
     if (!v) return;
     v.muted = true;
-    v.play().catch(() => {});
+    const tryPlay = () => v.play().catch(() => {});
+    const observer = new IntersectionObserver(
+      ([entry]) => { if (entry.isIntersecting) tryPlay(); },
+      { threshold: 0.1 }
+    );
+    observer.observe(v);
+    v.addEventListener("canplay", tryPlay, { once: true });
+    tryPlay();
+    return () => { observer.disconnect(); v.removeEventListener("canplay", tryPlay); };
   }, []);
-  return <video ref={ref} src={src} autoPlay muted loop playsInline className="absolute inset-0 w-full h-full object-cover" />;
+  return <video ref={ref} src={src} autoPlay muted loop playsInline preload="auto" className="absolute inset-0 w-full h-full object-cover" />;
 }
 
 const CLOUD = "https://res.cloudinary.com/dixdfunwk/image/upload";
