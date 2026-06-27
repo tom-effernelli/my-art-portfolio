@@ -39,7 +39,7 @@ export default function ContactPage() {
           <span className="font-archivo font-bold text-[42px] md:text-[34px] sm:text-[26px] xs:text-[20px] tracking-[-0.02em] [word-break:break-word] transition-opacity duration-200 group-hover:opacity-80">
             tom.effernelli@gmail.com
           </span>
-          <span className="font-archivo-exp font-extrabold text-[42px] xs:text-[26px] transition-transform duration-200 group-hover:translate-x-1 group-hover:-translate-y-1">↗</span>
+          <span className="font-archivo-exp font-extrabold text-[42px] xs:text-[26px] transition-transform duration-200 group-hover:translate-x-1 group-hover:-translate-y-1">{"↗︎"}</span>
         </a>
 
         {/* Detail */}
