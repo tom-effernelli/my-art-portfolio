@@ -29,15 +29,8 @@ img {
   user-drag: none;
 }
 
-::selection {
-  background-color: #2620FF;
-  color: #F3ECDA;
-}
-
-::-moz-selection {
-  background-color: #2620FF;
-  color: #F3ECDA;
-}
+.sel-dark ::selection  { background: #111; color: #fff; }
+.sel-light ::selection { background: #fff; color: #111; }
 
 /* Kinetic / cinematic image motion used in the hero & showcase */
 @keyframes fl-kenburns {

@@ -17,7 +17,7 @@ export default function TopBar({ currentPage = "home", theme = "light" }) {
 
   return (
     <div
-      className="sticky top-0 z-[200000] w-full flex flex-col"
+      className={`${dark ? "sel-light" : "sel-dark"} sticky top-0 z-[200000] w-full flex flex-col`}
       style={{ background: dark ? "#111111" : "#ffffff", color: fg }}
     >
       <div className="w-full flex items-center justify-between px-[30px] xs:px-[18px] py-[16px]">

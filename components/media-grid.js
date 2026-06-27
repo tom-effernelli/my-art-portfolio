@@ -85,7 +85,7 @@ export default function MediaGrid({ items = [], tiles = null, zipName = "shootin
   const current = idx !== null ? images[idx] : null;
 
   const Lightbox = () => current && (
-    <div className="fixed inset-0 z-[300000] bg-black/90 flex items-center justify-center p-10 xs:p-4" onClick={close}>
+    <div className="sel-light fixed inset-0 z-[300000] bg-black/90 flex items-center justify-center p-10 xs:p-4" onClick={close}>
       <div className="absolute top-5 right-5 flex items-center gap-4 z-10">
         <span className="text-white/60 text-sm font-mono mr-1">
           {String(idx + 1).padStart(2, "0")} / {String(images.length).padStart(2, "0")}

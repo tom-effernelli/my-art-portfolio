@@ -48,7 +48,7 @@ const Home = () => {
     <>
       <TopBar currentPage="home" theme="dark" />
 
-      <div className="w-full min-h-screen bg-[#111] text-white flex flex-col items-start">
+      <div className="sel-light w-full min-h-screen bg-[#111] text-white flex flex-col items-start">
 
         {/* Showcase — asymmetric, borderless, photo + video */}
         <div className="self-stretch grid grid-cols-3 gap-0 auto-rows-[70px] md:auto-rows-[58px] sm:auto-rows-[42px] xs:auto-rows-[34px] leading-[0]">

@@ -79,7 +79,7 @@ const MediaCarousel = ({ mediaItems, buttonBgColor = "#090909", zipName = "shoot
     <>
       {lightboxOpen && (
         <div
-          className="fixed inset-0 z-[9999] bg-black/90 flex items-center justify-center p-10"
+          className="sel-light fixed inset-0 z-[9999] bg-black/90 flex items-center justify-center p-10"
           onClick={() => setLightboxOpen(false)}
         >
           <div className="absolute top-5 right-5 flex items-center gap-4">

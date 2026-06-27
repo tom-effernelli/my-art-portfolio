@@ -30,7 +30,7 @@ export default function AboutPage() {
     <>
       <TopBar currentPage="about" theme="light" />
 
-      <div className="w-full min-h-screen bg-white text-[#111] flex flex-col items-start px-[30px] xs:px-[18px] pb-[80px] gap-[44px] xs:gap-[34px]">
+      <div className="sel-dark w-full min-h-screen bg-white text-[#111] flex flex-col items-start px-[30px] xs:px-[18px] pb-[80px] gap-[44px] xs:gap-[34px]">
 
         {/* Heading */}
         <div className="self-stretch flex items-end justify-between gap-4 pt-[30px]">

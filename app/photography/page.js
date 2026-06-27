@@ -40,7 +40,7 @@ export default function PhotographyPage() {
     <>
       <TopBar currentPage="photography" theme="light" />
 
-      <div className="w-full min-h-screen bg-white text-[#111] flex flex-col items-start pb-[80px] gap-[56px] xs:gap-[40px]">
+      <div className="sel-dark w-full min-h-screen bg-white text-[#111] flex flex-col items-start pb-[80px] gap-[56px] xs:gap-[40px]">
 
         {/* Heading */}
         <div className="self-stretch flex flex-col items-start gap-5 px-[30px] xs:px-[18px] pt-[30px]">

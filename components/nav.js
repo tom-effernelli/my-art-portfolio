@@ -22,7 +22,7 @@ export default function Nav({ currentPage = "home", className = "" }) {
         </>
       )}
 
-      <nav className={`w-full bg-[#b2dafa] border-[#000] border-solid border-b-[1px] box-border max-w-full h-[101px] lg:h-[90px] md:h-[80px] sm:h-[60px] xs:h-[50px] overflow-hidden flex items-center justify-between py-0 px-[45px] xs:px-[23px] text-left text-[29px] lg:text-[26px] md:text-[24px] sm:text-[18px] xs:text-[16px] text-[#000] font-space-grotesk font-medium ${className}`}>
+      <nav className={`sel-dark w-full bg-[#b2dafa] border-[#000] border-solid border-b-[1px] box-border max-w-full h-[101px] lg:h-[90px] md:h-[80px] sm:h-[60px] xs:h-[50px] overflow-hidden flex items-center justify-between py-0 px-[45px] xs:px-[23px] text-left text-[29px] lg:text-[26px] md:text-[24px] sm:text-[18px] xs:text-[16px] text-[#000] font-space-grotesk font-medium ${className}`}>
         <Link
           href="/"
           className="w-[50px] lg:w-[45px] md:w-[40px] sm:w-[30px] xs:w-[25px] h-[50px] lg:h-[45px] md:h-[40px] sm:h-[30px] xs:h-[25px] bg-[#b2dafa] border-[#000] border-solid border-[5px] lg:border-[4px] md:border-[3px] sm:border-[2px] xs:border-[2px] box-border block shrink-0"

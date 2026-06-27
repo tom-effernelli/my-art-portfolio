@@ -14,7 +14,7 @@ export default function DropdownMenu({ currentPage = "home", theme = "light", on
   const border = dark ? "rgba(255,255,255,0.12)" : "rgba(17,17,17,0.12)";
 
   return (
-    <div style={{ borderTop: `1px solid ${border}` }}>
+    <div className={dark ? "sel-light" : "sel-dark"} style={{ borderTop: `1px solid ${border}` }}>
       {pages.map(({ label, href }) => {
         const active = currentPage === href.slice(1);
         return (

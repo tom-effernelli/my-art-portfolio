@@ -97,7 +97,7 @@ const ContactSheet = ({ mediaItems = [], isLight = true, zipName = "shooting" })
       {/* Lightbox */}
       {current && (
         <div
-          className="fixed inset-0 z-[300000] bg-black/90 flex items-center justify-center p-10 xs:p-4"
+          className="sel-light fixed inset-0 z-[300000] bg-black/90 flex items-center justify-center p-10 xs:p-4"
           onClick={closeLightbox}
         >
           {/* Top-right controls */}

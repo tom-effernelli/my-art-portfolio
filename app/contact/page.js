@@ -20,7 +20,7 @@ export default function ContactPage() {
     <>
       <TopBar currentPage="contact" theme="dark" />
 
-      <div className="w-full min-h-screen bg-[#111] text-white flex flex-col items-start">
+      <div className="sel-light w-full min-h-screen bg-[#111] text-white flex flex-col items-start">
 
         {/* Heading */}
         <div className="self-stretch px-[30px] xs:px-[18px] pt-[40px] pb-[16px]">
@@ -33,7 +33,7 @@ export default function ContactPage() {
         {/* Big mailto */}
         <a
           href="mailto:tom.effernelli@gmail.com"
-          className="self-stretch flex items-center justify-between gap-5 [text-decoration:none] text-black px-[30px] xs:px-[18px] py-[30px] xs:py-[22px] mt-6 group"
+          className="sel-dark self-stretch flex items-center justify-between gap-5 [text-decoration:none] text-black px-[30px] xs:px-[18px] py-[30px] xs:py-[22px] mt-6 group"
           style={{ background: BLUE }}
         >
           <span className="font-archivo font-bold text-[42px] md:text-[34px] sm:text-[26px] xs:text-[20px] tracking-[-0.02em] [word-break:break-word] transition-opacity duration-200 group-hover:opacity-80">
