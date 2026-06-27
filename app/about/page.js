@@ -35,14 +35,22 @@ export default function AboutPage() {
         {/* Heading */}
         <div className="self-stretch flex items-end justify-between gap-4 pt-[30px]">
           <div className="font-archivo-exp font-extrabold text-[96px] lg:text-[88px] md:text-[68px] sm:text-[52px] xs:text-[38px] leading-[0.84] tracking-[-0.035em]">
-            ABOUT<span style={{ color: BLUE }}>.</span>
+            ABOUT.
           </div>
-          <span className="font-mono text-[12px] opacity-60 mb-2 sm:hidden xs:hidden">(IDENTITY — PARIS / FR)</span>
+        </div>
+
+        
+        {/* AS A PHOTOGRAPHER */}
+        <div className="self-stretch flex flex-col gap-4 pt-2">
+          <div className="font-mono text-[12px] tracking-[0.14em] border-b-[1.5px] border-[#111]">AS A PHOTOGRAPHER</div>
+          <p className="m-0 font-archivo font-normal text-[18px] xs:text-[15px] leading-[1.5]">
+            Editorial and fashion photographer based in Paris. Available worldwide.
+          </p>
         </div>
 
         {/* AS A MODEL */}
         <div className="self-stretch flex flex-col gap-5">
-          <div className="font-mono text-[12px] tracking-[0.14em]" style={{ color: BLUE }}>/ AS A MODEL</div>
+          <div className="font-mono text-[12px] tracking-[0.14em] border-b-[1.5px] border-[#111]">AS A MODEL</div>
 
           <div className="self-stretch flex gap-[40px] sm:flex-col xs:flex-col items-start">
 
@@ -64,13 +72,6 @@ export default function AboutPage() {
 
             {/* Identity + measurements */}
             <div className="flex-1 w-full flex flex-col gap-1.5">
-              <div className="font-archivo font-extrabold text-[20px]">TOM EFFERNELLI</div>
-              <p className="m-0 font-archivo font-normal text-[15px] leading-[1.4] opacity-80 mb-2.5">
-                Editorial &amp; fashion model based in Paris. Available worldwide.
-              </p>
-              <div className="font-mono text-[11px] tracking-[0.14em] pb-2 border-b-[1.5px] border-[#111]" style={{ color: BLUE }}>
-                MODEL MEASUREMENTS
-              </div>
               <div className="flex flex-col">
                 {measurements.map(({ label, value }) => (
                   <div key={label} className="flex items-baseline justify-between border-b border-[#111]/15 py-2 font-mono text-[12px]">
@@ -84,7 +85,7 @@ export default function AboutPage() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-mono text-[12px] tracking-[0.1em] w-fit pb-[3px] mt-3 [text-decoration:none] hover:opacity-60 transition-opacity"
-                style={{ color: BLUE, borderBottom: `1.5px solid ${BLUE}` }}
+                style={{borderBottom: `1.5px solid ${BLUE}` }}
               >
                 VIEW / DOWNLOAD BOOK ↓
               </a>
@@ -92,15 +93,6 @@ export default function AboutPage() {
 
           </div>
         </div>
-
-        {/* AS A PHOTOGRAPHER */}
-        <div className="self-stretch flex flex-col gap-4 pt-2">
-          <div className="font-mono text-[12px] tracking-[0.14em]" style={{ color: BLUE }}>/ AS A PHOTOGRAPHER</div>
-          <p className="m-0 font-archivo font-normal text-[18px] xs:text-[15px] leading-[1.5] max-w-[480px]">
-            Editorial and fashion photographer based in Paris. Available worldwide.
-          </p>
-        </div>
-
       </div>
 
     </>
