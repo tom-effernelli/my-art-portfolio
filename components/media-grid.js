@@ -167,7 +167,7 @@ export default function MediaGrid({ items = [], tiles = null, zipName = "shootin
                     </span>
                   </>
                 )}
-                <span className="absolute left-2.5 bottom-3 font-mono text-[10px] text-white mix-blend-difference">{t.label}</span>
+                <span className="absolute left-2.5 bottom-3 font-mono text-[10px]  xs:hidden text-white mix-blend-difference">{t.label}</span>
               </div>
             );
           })}
